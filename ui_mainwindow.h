@@ -20,6 +20,7 @@
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
@@ -72,6 +73,7 @@ public:
     QLabel *label_4;
     QTextBrowser *answer5;
     QLabel *label_5;
+    QProgressBar *progressBar;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -80,7 +82,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(704, 465);
+        MainWindow->resize(704, 478);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         title = new QLabel(centralWidget);
@@ -209,22 +211,26 @@ public:
         label_2->setGeometry(QRect(280, 200, 47, 12));
         answer3 = new QTextBrowser(centralWidget);
         answer3->setObjectName(QStringLiteral("answer3"));
-        answer3->setGeometry(QRect(310, 220, 111, 192));
+        answer3->setGeometry(QRect(310, 220, 111, 191));
         label_3 = new QLabel(centralWidget);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(310, 200, 47, 12));
         answer4 = new QTextBrowser(centralWidget);
         answer4->setObjectName(QStringLiteral("answer4"));
-        answer4->setGeometry(QRect(420, 220, 71, 192));
+        answer4->setGeometry(QRect(420, 220, 71, 191));
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
         label_4->setGeometry(QRect(420, 200, 47, 12));
         answer5 = new QTextBrowser(centralWidget);
         answer5->setObjectName(QStringLiteral("answer5"));
-        answer5->setGeometry(QRect(490, 220, 201, 192));
+        answer5->setGeometry(QRect(490, 220, 201, 191));
         label_5 = new QLabel(centralWidget);
         label_5->setObjectName(QStringLiteral("label_5"));
         label_5->setGeometry(QRect(490, 200, 91, 16));
+        progressBar = new QProgressBar(centralWidget);
+        progressBar->setObjectName(QStringLiteral("progressBar"));
+        progressBar->setGeometry(QRect(50, 390, 118, 23));
+        progressBar->setValue(0);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));

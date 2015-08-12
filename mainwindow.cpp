@@ -15,12 +15,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_radioButton_4_clicked()
-{
-
-}
-
-
 
 void MainWindow::on_checkBox_clicked()
 {
@@ -65,4 +59,16 @@ void MainWindow::on_send_clicked()
     ui->answer5->append(codec->toUnicode("你這個媽寶!!!!!"));
 
 
+}
+int barvalue;
+void MainWindow::on_boy_clicked()
+{
+
+    ui->progressBar->setValue(10);
+}
+
+void MainWindow::on_girl_clicked()
+{
+
+    ui->progressBar->setValue(10);
 }

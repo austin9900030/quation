@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QFile>
 #include <QTextStream>
+#include <QDebug>
+#include <QString>
 namespace Ui {
 class MainWindow;
 }
@@ -17,13 +19,17 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_radioButton_4_clicked();
+    //void on_radioButton_4_clicked();
 
     void on_checkBox_clicked();
 
     void on_checkBox_3_clicked();
 
     void on_send_clicked();
+
+    void on_boy_clicked();
+
+    void on_girl_clicked();
 
 private:
     Ui::MainWindow *ui;
